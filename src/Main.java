@@ -11,20 +11,11 @@ public class Main {
         System.out.println("Введите второе число");
         int operand2 = scanner.nextInt();
         switch (operation) {
-            case '+':
-                result = operand1 + operand2;
-                break;
-            case '-':
-                result = operand1 - operand2;
-                break;
-            case '*':
-                result = operand1 * operand2;
-                break;
-            case '/':
-                result = operand1 / operand2;
-                break;
-            default:
-                System.out.println("Неизвестная операция");
+            case '+' -> result = operand1 + operand2;
+            case '-' -> result = operand1 - operand2;
+            case '*' -> result = operand1 * operand2;
+            case '/' -> result = operand1 / operand2;
+            default -> System.out.println("Неизвестная операция");
         }
         System.out.println("Ответ:" + " " + result);
     }
